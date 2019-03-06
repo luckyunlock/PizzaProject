@@ -71,7 +71,7 @@ app.get('/break_pin', function (req, res) {
     res.send({accept:"Yesss"});
 });
 
-app.get('/html_response', function (req, res) {
+app.get('/request_pizza_html', function (req, res) {
     
     let response = {
         accettato: false,
@@ -93,7 +93,7 @@ app.get('/html_response', function (req, res) {
         isValid = false
     
     if(!isValid){
-        res.render('failure_page', { title: 'Hey', message: 'Hello there!'});
+        res.render('failure_page', response);
     }else{
         response.accettato= true;
         response.suggerimento = null;
