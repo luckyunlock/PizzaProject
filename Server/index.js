@@ -15,7 +15,7 @@ function validate(input){
 }
 
 app.get('/', function (req, res) {
-  res.send('Hello World!');
+  res.send('Wellcome in pizza server!');
 });
 
 app.get('/request_list', function (req, res) {
